@@ -1,0 +1,13 @@
+#define BEG 1
+#define END 2
+#define ASSN 3
+#define SEMI 4
+#define ADD 5
+#define SUB 6
+#define MUL 7
+#define DIV 8
+#define MOD 9
+#define NUM 10
+#define ID 11
+#define OPENP 12
+#define CLOSEP 13
