@@ -61,32 +61,7 @@ void closeInput(FILE *in) {
 	fclose(in);
 }//end of close input
 
-/*
-void openOutput(int argc, char *argv[]) {
-	fpOut = NULL;
-	if (argc > 2) {
-		if ( (fpOut = fopen(argv[2], "w")) == NULL ) {
-			fprintf(stderr, "Error opening output file:  %s", argv[2]);
-		}
-	}
-	else
-		puts("No output file specified...");
-    	fpOut = stdout;
-}//end of openOutput
-
-void closeOutput(FILE *out) {
-	if (fclose(out) < 0)
-		puts("Error closing output file");
-}//end of closeOutput
-*/ //Removing this section for now, will just redirect output. couldn't get file output to work.
-
 void emit(char *opcode) {
-	/*
-	outsuccess = fprintf(fpOut,"%s", opcode);
-	fflush(fpOut);
-	if (outsuccess < 0)
-		puts("Error writing to file...");
-	*///Removed because of problems with file output, redirecting output instead
 	printf(opcode);
 }//end of emit
 
